@@ -3,8 +3,8 @@
 
 <meta charset="UTF-8">
 <base href="/">
-<title>BERCH</title>
-<meta name="description" content="BERCH description">
+<title>Miles&Yards</title>
+<meta name="description" content="Брокеридж - подбор помещений под аренду или покупку.">
 
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -19,7 +19,59 @@
 
 <body>
 
-	/* Главная страница */
+	<header class="page-header">
+
+		<h1 class="visualy-hidden">Подбор помещений</h1>
+
+		<div class="page-header__top top-line">
+			<div class="top-line__wrapper wrapper">
+				<a class="top-line__logo">
+					<img class="top-line__logo-image" src="img/logotype.png" width="187" height="32" alt="Логотип компании Miles&Yards">
+				</a>
+				<button class="button top-line__button" type="button">
+					<span></span>Обратный звонок</button>
+			</div>
+		</div>
+
+		<b class="page-header__title">Подберем объект для Вас и Вашего бизнеса</b>
+		<button class="button page-header__button" type="button">
+			<span></span>Подобрать объект</button>
+		<small class="page-header__description">Бесплатный подбор объекта нашим специалистом</small>
+
+		<form class="page-header__filters sort" method="get">
+			<div class="wrapper sort__wrapper">
+				<fieldset class="sort__fieldset">
+					<legend class="visualy-hidden">Регион</legend>
+					<select class="sort__select">
+						<option>Регион</option>
+						<option>Пункт 2</option>
+						<option>Пункт 3</option>
+						<option>Пункт 4</option>
+					</select>
+				</fieldset>
+				<fieldset class="sort__fieldset">
+					<legend class="visualy-hidden">Назначение</legend>
+					<select class="sort__select">
+						<option>Назначение помещения</option>
+						<option>Пункт 2</option>
+						<option>Пункт 3</option>
+						<option>Пункт 4</option>
+					</select>
+				</fieldset>
+				<fieldset class="sort__fieldset">
+					<legend class="visualy-hidden">Площадь помещения</legend>
+					<select class="sort__select">
+						<option>Площадь</option>
+						<option>Пункт 2</option>
+						<option>Пункт 3</option>
+						<option>Пункт 4</option>
+					</select>
+				</fieldset>
+				<button class="button sort__button" type="submit">Найти объекты</button>
+			</div>
+		</form>
+
+	</header>
 
 	<script src="js/scripts.min.js"></script>
 
