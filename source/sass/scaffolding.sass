@@ -1,5 +1,7 @@
 +font-face("roboto-d", "../fonts/RobotoRegular/RobotoRegular")
++font-face("roboto-d", "../fonts/RobotoThin/RobotoThin", 100)
 +font-face("roboto-d", "../fonts/RobotoLight/RobotoLight", 300)
++font-face("roboto-d", "../fonts/RobotoMedium/RobotoMedium", 500)
 +font-face("roboto-d", "../fonts/RobotoBold/RobotoBold", bold)
 
 +font-face("roboto-c", "../fonts/RobotoCondensedRegular/RobotoCondensedRegular")
@@ -16,6 +18,26 @@ body
 	font-family: $d-font
 	color: $text
 	font-style: normal
+
+.page-header
+	position: relative
+	z-index: 1
+
+	background-color: #000
+	background-image: url(../img/main.jpg)
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: cover
+
+	color: $dark
+	&::before
+		content: ''
+		display: block
+		position: absolute
+		width: 100%
+		height: 100%
+		background-color: rgba(190, 196, 198, .5)
+		z-index: -2
 
 .wrapper
 	padding-left: 10px
