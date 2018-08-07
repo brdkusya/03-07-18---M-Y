@@ -1,0 +1,64 @@
+.catalog-content__main
+	display: flex
+	margin-bottom: 35px
+
+.catalog-content__icon
+	width: 70px
+	margin-top: 10px
+	margin-right: 10px
+	padding-top: 35px
+	padding-bottom: 15px
+
+	position: relative
+
+	font-size: 14px
+	font-weight: 100
+	text-align: center
+	color: $light
+
+	background-color: $dark
+	&::after
+		content: ''
+		position: absolute
+		top: 8px
+		left: 0
+
+		width: 24px
+		height: 24px
+		margin-right: 23px
+		margin-left: 23px
+
+		background-image: url(../img/icons/stock.svg)
+		background-repeat: no-repeat
+		background-size: contain
+
+.catalog-content__title
+	margin: 0
+
+	font-family: $f-font
+	font-weight: normal
+	font-size: 36px
+	color: #000
+
+.catalog-content__adress
+	position: relative
+
+	padding-left: 27px
+
+	font-weight: 100
+	color: $accent
+	&::before
+		content: ''
+		position: absolute
+		left: 0
+
+		width: 24px
+		height: 24px
+
+		background-image: url(../img/icons/gps-b.svg)
+		background-repeat: no-repeat
+		background-size: contain
+
+@media (min-width: $tablet-width)
+	.catalog-content
+		width: 620px
